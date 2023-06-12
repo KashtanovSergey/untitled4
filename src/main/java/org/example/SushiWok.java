@@ -29,20 +29,19 @@ public class SushiWok
 
         driver.get("https://sushiwok.ru/spb/");
 
-        WebElement webElement1 = driver.findElement(By.xpath("//div[span='Вкусные часы!']"));
-        WebElement webElement2 = driver.findElement(By.xpath(".//div[span='Меню от Шефа']"));
-        WebElement webElement3 = driver.findElement(By.xpath(".//div[span='Наборы и комбо']"));
-        WebElement webElement4 = driver.findElement(By.xpath(".//div[span='Роллы']"));
-        WebElement webElement5 = driver.findElement(By.xpath(".//div[span='Запеченные роллы']"));
-        WebElement webElement6 = driver.findElement(By.xpath(".//div[span='Wok']"));
-        WebElement webElement7 = driver.findElement(By.xpath(".//div[span='Суши']"));
-        WebElement webElement8 = driver.findElement(By.xpath(".//div[span='Пицца']"));
-        WebElement webElement9 = driver.findElement(By.xpath("//div[span='Вегетарианское меню']"));
-        WebElement webElement10 = driver.findElement(By.xpath(".//div[span='Салаты и закуски']"));
-        WebElement webElement11 = driver.findElement(By.xpath(".//div[span='Супы и горячее']"));
-        WebElement webElement12 = driver.findElement(By.xpath(".//div[span='Бизнес-ланчи']"));
-        WebElement webElement13 = driver.findElement(By.xpath(".//div[span='Десерты и напитки']"));
-        WebElement webElement14 = driver.findElement(By.xpath(".//div[span='Дополнительно']"));
+        WebElement webElement1 = driver.findElement(By.xpath("//a[@href='/spb/menu/vkusnii-chasi/']"));
+        WebElement webElement2 = driver.findElement(By.xpath("//a[@href='/spb/menu/sety/']"));
+        WebElement webElement3 = driver.findElement(By.xpath("//a[@href='/spb/menu/rolly/']"));
+        WebElement webElement4 = driver.findElement(By.xpath("//a[@href='/spb/menu/zapechennye-rolly/']"));
+        WebElement webElement5 = driver.findElement(By.xpath("//a[@href='/spb/menu/kitajskaja-lapsha-wok/']"));
+        WebElement webElement6 = driver.findElement(By.xpath("//a[@href='/spb/menu/sushi/']"));
+        WebElement webElement7 = driver.findElement(By.xpath("//a[@href='/spb/menu/vegetarianskie-blyuda/']"));
+        WebElement webElement8 = driver.findElement(By.xpath("//a[@href='/spb/menu/pizza/']"));
+        WebElement webElement9 = driver.findElement(By.xpath("//a[@href='/spb/menu/salaty/']"));
+        WebElement webElement10 = driver.findElement(By.xpath("//a[@href='/spb/menu/supy-i-goryachee/']"));
+        WebElement webElement11 = driver.findElement(By.xpath("//a[@href='/spb/menu/biznes-lanchi/']"));
+        WebElement webElement12 = driver.findElement(By.xpath("//a[@href='/spb/menu/deserty/']"));
+        WebElement webElement13 = driver.findElement(By.xpath("//a[@href='/spb/menu/dopolnitelno/']"));
 
        webElement1.click();
        webElement2.click();
@@ -57,14 +56,12 @@ public class SushiWok
        webElement11.click();
        webElement12.click();
        webElement13.click();
-       webElement14.click();
 
-        WebElement topMenu1 = driver.findElement(By.xpath("//*[@href='/msk/akcii/']"));
-        WebElement topMenu2 = driver.findElement(By.xpath("//*[@href='/msk/menu/']"));
-        WebElement topMenu3 = driver.findElement(By.xpath("//*[@href='/msk/addresses/']"));
-        WebElement topMenu4 = driver.findElement(By.xpath("//*[@href='/msk/delivery/']"));
-        WebElement topMenu5 = driver.findElement(By.xpath("//*[@rel='noreferrer']"));
-        WebElement topMenu6 = driver.findElement(By.xpath("//*[@href='/msk/vakansii/']"));
+        WebElement topMenu1 = driver.findElement(By.xpath("//a[@href='/spb/akcii/']"));
+        WebElement topMenu2 = driver.findElement(By.xpath("//a[@href='/spb/menu/']"));
+        WebElement topMenu3 = driver.findElement(By.xpath("//a[@href='/spb/addresses/']"));
+        WebElement topMenu4 = driver.findElement(By.xpath("//a[@href='/spb/delivery/']"));
+        WebElement topMenu5 = driver.findElement(By.xpath("//a[@href='/spb/vakansii/']"));
 
 
         topMenu1.click();
@@ -72,6 +69,5 @@ public class SushiWok
         topMenu3.click();
         topMenu4.click();
         topMenu5.click();
-        topMenu6.click();
     };
 }
