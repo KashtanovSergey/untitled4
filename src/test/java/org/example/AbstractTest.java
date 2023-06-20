@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chromium.ChromiumDriver;
 import org.junit.jupiter.api.Assertions.*;
+
 import java.util.concurrent.TimeUnit;
 public abstract class AbstractTest {
     private static WebDriver driver;
@@ -30,11 +31,17 @@ public abstract class AbstractTest {
 
         }
 
+
         @BeforeEach
     void goTo(){
-            Assertions.assertDoesNotThrow(() -> driver.navigate().to("https://3332222.ru/"), "Страница не доступна");
-
+            Assertions.assertDoesNotThrow(() -> driver.navigate().to("https://3332222.ru/"));
+            try{
+                Thread.sleep(10000);
+            }catch(InterruptedException e){
+                e.printStackTrace();
+            }
     }
+
 
     @AfterAll
     static void close(){
